@@ -8,7 +8,7 @@ CREATE TABLE users (
     id SERIAL PRIMARY KEY NOT NULL,
     username VARCHAR(12) UNIQUE,
     active BOOLEAN,
-    created TIMESTAMP DEFAULT current_timestamp
+    created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 ```
@@ -58,6 +58,11 @@ SELECT * FROM users WHERE username='millie11';
 ##### AND or OR
 ```
 SELECT * FROM users WHERE active=true AND username='millie11';
+```
+
+##### IN
+```
+SELECT * FROM users WHERE username IN ('millie', 'lisa');
 ```
 
 #### Select certain columns
@@ -111,8 +116,8 @@ DELETE from users where username='bob1';
 ```
 
 ### Aggregate Functions
-https://www.postgresql.org/docs/9.4/static/functions-aggregate.html
-
+[https://www.postgresql.org/docs/9.4/static/functions-aggregate.html
+](https://www.postgresql.org/docs/9.4/static/functions-aggregate.html)
 #### COUNT
 
 ```
@@ -121,8 +126,20 @@ SELECT COUNT(*) FROM users;
 SELECT COUNT(username) FROM users;
 ```
 
-#### MAX
+Other useful aggregate functions exist. SUM can be used to add up all rows in a column. This could be good for money. Or MAX which can find the MAX value of a given column
+
+### Alter Table 
+You can change the table columns, types, or even drop a column. Do this carefully, because it could conflict with records that are currently stored. Below is an example of dropping a column from users table called column5. 
+
+```	
+ALTER TABLE users DROP COLUMN column5;
+```
+
+A good tutorial with examples of alter table statements: [http://www.tutorialspoint.com/postgresql/postgresql_alter_command.htm](http://www.tutorialspoint.com/postgresql/postgresql_alter_command.htm)
+
+### Drop Table
+To completely delete a table from your database. 
 
 ```
-SELECT MAX(created) FROM users;
+DROP TABLE users;
 ```
