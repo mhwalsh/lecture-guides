@@ -2,11 +2,11 @@
 
 This document is mostly from the following heroku tutorial in section "Provisioning the add-on".
 
-[https://devcenter.heroku.com/articles/heroku-postgresql#provisioning-the-add-on]()
+[https://devcenter.heroku.com/articles/heroku-postgresql#provisioning-the-add-on](https://devcenter.heroku.com/articles/heroku-postgresql#provisioning-the-add-on)
 
 Some of the tips are from the deploying your heroku app tutorial:
 
-[https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction]()
+[https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction)
 
 Inside your repo you need to set up the heroku remote using the following command. You my have to login to heroku on the command line again, if so see the 'getting started with heroku' tutorial link above.
 
@@ -31,8 +31,8 @@ $: heroku addons:create heroku-postgresql:hobby-dev
 
 "hobby-dev is the only free plan type". Read about the various plan types here:
 
-[https://elements.heroku.com/addons/heroku-postgresql]()
-[https://devcenter.heroku.com/articles/heroku-postgres-plans#plan-tiers]()
+[https://elements.heroku.com/addons/heroku-postgresql](https://elements.heroku.com/addons/heroku-postgresql)
+[https://devcenter.heroku.com/articles/heroku-postgres-plans#plan-tiers](https://devcenter.heroku.com/articles/heroku-postgres-plans#plan-tiers)
 
 Test your add-on is now associated with the app. You should see some output this time. The ```postgresql-clear-33029``` is the name of the database associated with the project.
 
