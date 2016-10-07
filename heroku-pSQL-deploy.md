@@ -8,6 +8,8 @@ Some of the tips are from the deploying your heroku app tutorial:
 
 [https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction)
 
+#### Set up the database on Heroku
+
 Inside your repo you need to set up the heroku remote using the following command. You my have to login to heroku on the command line again, if so see the 'getting started with heroku' tutorial link above.
 
 ```
@@ -18,7 +20,6 @@ The following commands will list out which heroku add-ons are associated with th
 
 ```
 $: heroku addons
-$: heroku addons | grep -i POSTGRES
 > No add-ons for app protected-garden-99611. 
 ```
 
@@ -37,32 +38,24 @@ $: heroku addons:create heroku-postgresql:hobby-dev
 Test your add-on is now associated with the app. You should see some output this time. The ```postgresql-clear-33029``` is the name of the database associated with the project.
 
 ```
-$: heroku addons | grep -i POSTGRES
+$: heroku addons 
 > heroku-postgresql (postgresql-clear-33029)  hobby-dev  free
 ```
 
-You can list the database url with the following command:
-
-```
-$: heroku config -s | grep DATABASE_URL
-> DATABASE_URL='postgres://dgectcjmdpewpe:LDOvIcANhJEL0Km9dUR5S0Od56@ec2-54-221-240-149.compute-1.amazonaws.com:5432/d90fmaq8n92uhc'
-```
 The following command shows you more information about your database including the plan type and the database size.
 
 ```
 $: heroku pg:info 
 ```
-Login into your heroku account in your browser. Go to your heroku databases section (hamburger menu, databases). Click into the one for this project (the name will be the same as the name listed when you ran ```heroku pg:info ```. This will show you your connection information. 
+Login into your heroku account in your browser. Go to your heroku databases section in the hamburger menu or nine dots by profile picture. Click into the one for this project (the name will be the same as the name listed when you ran ```heroku pg:info ```. This will show you your connection information. 
 
 Now in postico, add a "new favorite". Name it something memorable and related to the project. I called mine heroku-test-deploy. 
 
+You will need to copy the ```hostname```, ```username```, ```database```, and ```password``` in the corresponding fields when you create a new favorite in postico.
+
 Once connected you need to create the table. You can do this in postico in the SQL query menu. When you run ```heroku pg:info ``` in terminal again you should see the table count go from 0 to the number of tables you created.
 
-Now we need to deploy the code to heroku (if you haven't already). 
-
-```
-$: git push heroku master
-```
+#### Make sure your code is ready
 
 * Remember you need an npm start script
 * Remember to have your port set like process.env.PORT i.e. NOT hard-coded.
@@ -88,6 +81,13 @@ module.exports = connectionString;
 
 This file is a module that I require any place I need to connect to the database. I called it connection.js and it is in my modules folder.
 
+#### Finish Deploy
+
+Now we need to deploy the code to heroku (if you haven't already). 
+
+```
+$: git push heroku master
+```
 
 Spin it up:
 
