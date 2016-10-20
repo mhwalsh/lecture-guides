@@ -1,9 +1,5 @@
 ### Working with git in groups
 
-Team Malia Racing has been practicing working with git on group projects. They wanted to get into conflicts and know how to resolve them before the code got more complex. Great Idea! To help them through this we walked through the normal git workflow for teams. There is a picture on the whiteboard and if anyone else wants to be walked through it let me know. 
-
-Here are the two ways to handle merging on group projects:
-
 #### Do it all locally
 1. pull master (```$: git pull```)
 2. create a feature branch (``` $: git checkout -b <branch name>```)
