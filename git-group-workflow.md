@@ -18,6 +18,6 @@
 5. open a PR or Pull Request on github
 6. If there are no conflict, merge with the UI "merge" button
 7. To get a copy of the updated master locally do a pull (```$: git pull```)
-8. If there are conflicts you will have to follow the local steps above starting at step 4. 
+8. If there are conflicts you will have to follow the local steps above starting at step 4 or you can merge master into your feature branch locally, resolve the conflicts, push the feature branch again to update the PR, then merge via the UI button.
 
 
