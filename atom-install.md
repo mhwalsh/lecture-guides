@@ -10,7 +10,7 @@ Install Atom and install a few useful plugins to help you work more affectively.
 - [Community Packages](#community-packages)
 - [Settings](#settings)
 - [Activity](#activity)
-	- [Hard Mode](#hard-mode) 	
+- [Hard Mode](#hard-mode) 	
 
 ### Download Atom
 - Download from here: [https://atom.io/](https://atom.io/)
