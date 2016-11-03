@@ -1,6 +1,4 @@
 ## Atom Install Guide
-Follow these steps to get atom setup with the basic packages on your machine.
-
 ### Objects 
 Install Atom and install a few useful plugins to help you work more affectively.
 
