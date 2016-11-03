@@ -5,7 +5,12 @@ Follow these steps to get atom setup with the basic packages on your machine.
 Install Atom and install a few useful plugins to help you work more affectively.
 
 ### Contents
-[Download Atom](#download-atom)
+- [Download Atom](#download-atom)
+- [Default Functionality / Core Packages](#default-functionality--core-packages)
+- [Community Packages](#community-packages)
+- [Settings](#settings)
+- [Activity](#activity)
+	- [Hard Mode](#hard-mode) 	
 
 ### Download Atom
 - Download from here: [https://atom.io/](https://atom.io/)
