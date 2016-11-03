@@ -1,8 +1,15 @@
 ## Atom Install Guide
 Follow these steps to get atom setup with the basic packages on your machine.
 
+### Objects 
+Install Atom and install a few useful plugins to help you work more affectively.
+
 #### Download Atom
-[https://atom.io/]()
+- Download from here: [https://atom.io/](https://atom.io/)
+- After downloading drag the Atom icon from Downloads to the Applications folder. 
+![](imgs/applications.png)
+- To keep Atom in your doc, right click on the open application item in your doc, select options and keep in doc.
+![](imgs/keep-in-doc.png)
 
 -
 
@@ -13,27 +20,26 @@ To see what is installed by default or enable it, go to the preferences menu (al
 
 ![](imgs/atom-setting-pane.png)
 
-The default packages are listed under the **Core Packages** section. Autosave is an example of a core package. Search for autosave and ensure it is enabled. This package will save files when they lose focus (i.e. you are looking at another application). Although, this is default you might have to enable it. 
+The default packages are listed under the **Core Packages** section. Autosave is an example of a core package. This package will save files when they lose focus (i.e. you are looking at another application). First, ensure it is enable on this screen above. Second, click into autosave and you will see it's internal Settings menu and an enable check box. See image below.
+
+![](imgs/autosave-enable.png)
 
 Test it is working by making a change to any file. See the blue dot on the file tab, meaning the file is 'dirty' or unsaved (See image below). Open a new file or go to another application, when you come back the blue dot should be gone indicating the file is saved. You can also save files with "command s".
 
 ![](imgs/atom-blue-dot.png)
 
-
-Note, some packages need you to restart atom before they take effect.
-
 -
 
 #### Community Packages
 
-You can install the community packages. Here is a small list of some suggested ones.
+You can install the community packages. Here is a small list of some suggested ones. Note, some packages need you to restart atom before they take effect.
 
-- terminal-plus
-- linter
-- linter-jshint
-- minimap
-- file-icons
-- rest-client - *You wont need this until Week 3*
+- [platformio-ide-terminal](https://atom.io/packages/platformio-ide-terminal)
+- [linter](https://atom.io/packages/linter)
+- [linter-jshint](https://atom.io/packages/linter-jshint)
+- [minimap](https://atom.io/packages/minimap)
+- [file-icons](https://atom.io/packages/file-icons)
+- [open-in-browser](https://atom.io/packages/open-in-browser)
 
 There are two ways to install community packages in atom. The first way is described below. If you are interested in installing things via the command line, there is a hard mode below that describes atom package manager (apm).
 
@@ -48,7 +54,7 @@ Some packages require you launch them from the package menu.
 
 ![](imgs/atom-packages-menu.png)
 
-Terminal plus you should be able to launch using the small plus button in the bottom left corner of atom. 
+The terminal you can launch using the small plus button in the bottom left corner of atom. 
 
 ![](imgs/atom-terminal-plus.png)
 
