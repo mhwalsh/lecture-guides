@@ -4,7 +4,10 @@ Follow these steps to get atom setup with the basic packages on your machine.
 ### Objects 
 Install Atom and install a few useful plugins to help you work more affectively.
 
-#### Download Atom
+### Contents
+[Download Atom](#download-atom)
+
+### Download Atom
 - Download from here: [https://atom.io/](https://atom.io/)
 - After downloading drag the Atom icon from Downloads to the Applications folder. 
 ![](imgs/applications.png)
@@ -13,7 +16,7 @@ Install Atom and install a few useful plugins to help you work more affectively.
 
 -
 
-#### Default Functionality / Core Packages
+### Default Functionality / Core Packages
 Atom is the 'hackable text editor'. This means that the community that uses it, extends it via packages they write to add new functionality. As these packages become popular the "maintainers" (programmers that work on and are responsible for a software project) of atom can decide to make functionality default. 
 
 To see what is installed by default or enable it, go to the preferences menu (also called settings). This is located in the Atom menu, select Preferences. A new tab will open called **Settings**. On the left hand side of this screen you should see a series of options: Settings, Keybindings, Packages, Themes, Updates, and Install. Select **Packages**.
@@ -30,7 +33,7 @@ Test it is working by making a change to any file. See the blue dot on the file 
 
 -
 
-#### Community Packages
+### Community Packages
 
 You can install the community packages. Here is a small list of some suggested ones. Note, some packages need you to restart atom before they take effect.
 
@@ -60,7 +63,7 @@ The terminal you can launch using the small plus button in the bottom left corne
 
 -
 
-#### Settings 
+### Settings 
 There are many Settings in the settings tab on the left selection menu when you open up the Preference pane in Atom. Explore these and see if there are any things you want to change. I suggest turning on **Indent Guides**. See picture below to understand what it does. 
 
 ![](imgs/atom-nested-func.png)
@@ -68,7 +71,7 @@ There are many Settings in the settings tab on the left selection menu when you 
 This code doesn't do anything useful, but you can see that the indentation and the closing braces are marked with a light gray vertical line. It can be very useful.
  
 -
-#### Activity 
+### Activity 
 First, install the suggested packages via the Install menu as described above or using apm below. 
 
 Second, do some research on atom packages. Find a cool one (not on the list above) to share with the class tomorrow.
