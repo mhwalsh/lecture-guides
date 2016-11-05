@@ -13,12 +13,12 @@ One way to think about it is in the context of some software tool you currently 
 - living document - history
 - collaboration
 
-### Why use git specifically?
+### Why git?
 The git documentation covers this topic very well [here](https://git-scm.com/about) if you want to more in depth to why git.
 
 ## Github vs git
 ### git
-git is a command line tool (in your terminal), that allows us to do get all the benefits described above. You can do all you need locally (on your computer) without connect to the internet. See [Why git?]() section for more detail, but it's local capabilities are one of it's main advantages. 
+git is a command line tool (in your terminal), that allows us to do get all the benefits described above. You can do all you need locally (on your computer) without connect to the internet. See [Why git?](#why-git) section for more detail, but it's local capabilities are one of it's main advantages. 
 
 ### Github
 Github is a web application built on top of git. It adds some additional functionality and some nice UIs (user interfaces) to make things easier to read. The main benefit is it easily helps us collaborate with other developers. We can put our code up on Github and others can collaborate on the project, use our code as an example, give us feedback on what we are writing, etc.
