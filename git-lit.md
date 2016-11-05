@@ -1,18 +1,15 @@
 # Git
 
 ## What is version control?
-One way to think about it is in the context of some software tool you currently use. Every few months you get a new 'version' of the tool you are using. The code that was written to create the software tool is the same original files, but in this new version some of the files may have been changed to add a new feature or fix a bug (broken code). Git is one of the tools that developers use to be able to facilitate multiple versions of the same code.
+One way to think about version control is in the context of some software tool you currently use. Every few months you get a new 'version' of the tool you are using. The code that was written to create the software tool is the same original files, but in this new version some of the files may have been changed to add a new feature or fix a bug (broken code). Git is one of the tools that developers use to be able to facilitate multiple versions of the same code.
 
 ### Some other analogies:
-
-- track changes or history in a word/google doc
-- for gamers a checkpoint 
+- track changes or history in a word or google doc
+- a checkpoint in a video game
 
 ## Why use version control/git?
-- code at various stages or versions
-- living document - history 
-- go back if you make a mistake
-- collaboration
+- Various version of the same code. To maintain the history. You can go back and view what the code used to look like or even go back in time to fix something the broke.
+- As a collaboration tool. When many developers work on the same files it can be complicated and time consuming to combine all the changes. Version control helps developers make changes in parallel and handle conflicts.
 
 ### Why git?
 The git documentation covers this topic very well [here](https://git-scm.com/about) if you want to more in depth to why git.
@@ -24,7 +21,7 @@ git is a command line tool (in your terminal), that allows us to get all the ben
 ### Github
 Github is a web application built on top of git. It adds some additional functionality and some nice UIs (user interfaces) to make things easier to read. The main benefit is it easily helps us collaborate with other developers. We can put our code up on Github and others can collaborate on the project, use our code as an example, or give us feedback on what we are writing.
 
-You may here people say "remote repository" this is what Github is. A place not our our computer where we can store our code. 
+You may hear people say "remote repository" this is what Github is. A place not on our computer where we can store our code. 
 
 There are other similar services. Github is just one that is popular and we will be using during the workshop.
 
