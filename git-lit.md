@@ -10,6 +10,7 @@ One way to think about version control is in the context of some software tool y
 ## Why use version control/git?
 - Various version of the same code. To maintain the history. You can go back and view what the code used to look like or even go back in time to fix something the broke.
 - As a collaboration tool. When many developers work on the same files it can be complicated and time consuming to combine all the changes. Version control helps developers make changes in parallel and handle conflicts.
+- It allows us as developers to take risks (in a controlled way). We can try something, see if it works, and back out of if it breaks something or incorporate it if it works.
 
 ### Why git?
 The git documentation covers this topic very well [here](https://git-scm.com/about) if you want to more in depth to why git.
