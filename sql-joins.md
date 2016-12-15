@@ -30,6 +30,8 @@
 * **Right** - Gives all records that exist in the right table. Fills in blanks from the left table with NULL.
 * **Full Outer** - Gives all records that exist in both tables. Fills in blanks from both tables with NULL.
 
+![joins venn diagram](imgs/joinsVenn.png)
+
 ### Base Syntax
 
 ```
