@@ -33,11 +33,9 @@
 ### Base Syntax
 
 ```
-SELECT * from <table1> <join type> JOIN <table2> ON <table1>.<field> = <table2>.<field>;
+SELECT * from <left_table> <join type> JOIN <right_table> ON <left_table>.<field> = <right_table>.<field>;
 ```
 * < join type > - INNER, LEFT, RIGHT, FULL OUTER
-* < table1 > - "left table"
-* < table2 > - "right table"
 * < field > - an id from both tables that is the same and that you want to equate.
 
 ### Examples of Join Syntax
