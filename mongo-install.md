@@ -30,17 +30,20 @@ If you created the directory with sudo, you will need to change permissions of t
 $: sudo chmod 0755 /data/db 
 $: sudo chown -R $USER /data/db
 ```
-Run the database with:
+Run the database in the foreground with:
 
 ```
 $: mongod
 ```
+And kill it with `cntl c`.
 
-You can use brew services to manage this process too. 
+Or can use brew services to manage this process in the background with: 
 
 ```
 $: brew services start mongodb
 ```
+With brew services you wont have to remember to start and stop your database.
+
 -----
 
 #### Mongo Shell and AdminMongo
@@ -59,4 +62,9 @@ connecting to: test
 ##### Admin Mongo
 UI/GUI tool for interacting with mongo db. It's a node project! Installation instructions:
 	
-https://github.com/mrvautin/adminMongo
+[https://github.com/mrvautin/adminMongo](https://github.com/mrvautin/adminMongo)
+
+##### Robo Mongo
+Another option for a GUI tool for interacting with the mongo database. 
+
+[https://robomongo.org/](https://robomongo.org/)
