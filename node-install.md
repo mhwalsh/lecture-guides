@@ -1,5 +1,5 @@
 ## Node Install
-Installing node via [homebrew](http://brew.sh/) is easy. Doing it with brew over the Node.js installer is outlined on this [blog](http://blog.teamtreehouse.com/install-node-js-npm-mac).
+We will install node via [homebrew](http://brew.sh/). Brew is the *The missing package manager for macOS* meaning it allows us to install tools from the command line. The benefits of installing node with brew over the Node.js installer are outlined on this [blog](http://blog.teamtreehouse.com/install-node-js-npm-mac).
 
 #### Steps
 1. First you need to get brew. You can test if you have brew with this command:
