@@ -28,9 +28,11 @@ Test that your install worked by entering the psql shell:
 ```
 psql
 ```
+
 The above command will change your prompt to have a `#` in it. This just indicates you are inside the psql shell meaning you can interact with your databases.
 
 To exit the psql shell type:
+
 ```
 \q 
 ```
