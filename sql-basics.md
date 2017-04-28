@@ -101,18 +101,18 @@ SELECT * FROM users WHERE username LIKE '%millie%';
 _update_ existing rows
 
 ```
-UPDATE users set username='millie' where username='millie11';
+UPDATE users SET username='millie' WHERE username='millie11';
 
-UPDATE users set active=true where id=2;
+UPDATE users SET active=true WHERE id=2;
 ```
 
 ### DELETE
 _delete_ existing rows
 
 ```
-DELETE from users where id=1;
+DELETE FROM users WHERE id=1;
 
-DELETE from users where username='bob1';
+DELETE FROM users WHERE username='bob1';
 ```
 
 ### Aggregate Functions
