@@ -58,12 +58,6 @@ MongoDB shell version: 3.2.4
 connecting to: test
 >
 ```
-
-##### Admin Mongo
-UI/GUI tool for interacting with mongo db. It's a node project! Installation instructions:
-	
-[https://github.com/mrvautin/adminMongo](https://github.com/mrvautin/adminMongo)
-
 ##### Robo Mongo
 Another option for a GUI tool for interacting with the mongo database. 
 
