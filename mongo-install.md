@@ -46,7 +46,7 @@ With brew services you wont have to remember to start and stop your database.
 
 -----
 
-#### Mongo Shell and AdminMongo
+#### Mongo Shell and RoboMongo
 Two tools to interact with mongodb.
 
 1. Any guesses to what these tools look like?
