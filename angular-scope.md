@@ -1,7 +1,7 @@
 # Angular $scope
 
 ## tl;dr
-We will use `controller as` because it is newer and has ability to nest controllers more cleanly. We are showing you `$scope` because there will be a lot of examples on the internet that use it and you will want to know how to translate between scope and controller as.
+We will use `controller as` because it is newer and has ability to nest controllers more cleanly. We are showing you `$scope` because there will be a lot of examples on the internet that use it and you will want to know how to translate between $scope and controller as.
 
 ## Controller As
 
@@ -12,7 +12,7 @@ We will use `controller as` because it is newer and has ability to nest controll
 </div>
 ```
 
-### controller as
+### client.js
 ```
 myApp.controller('myFirstController', function() {
   // view model
@@ -21,7 +21,7 @@ myApp.controller('myFirstController', function() {
 });
 ```
 
-## scope 
+## $scope 
 
 ### index.html
 You don't need to name your controller as anything. Less typing here, but things get messy when you want to nest controllers later.
@@ -32,7 +32,7 @@ You don't need to name your controller as anything. Less typing here, but things
 </div>
 ```
 
-### controller as
+### client.js
 You need to inject `$scope` into the controller.
 
 ```
@@ -56,8 +56,14 @@ With controller as we can refer to our controllers by name. This allows us to ne
 </div>
 ```
 
-### controller as
+### client.js
 ```
+myApp.controller('myFirstController', function() {
+  // view model
+  var vm = this;
+  vm.oneThing = 'This is my first thing';
+});
+
 myApp.controller('myNestedController', function() {
   var vm = this;
   vm.nestedThing = 'Here is a nested thing!'
