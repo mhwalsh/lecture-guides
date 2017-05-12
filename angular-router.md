@@ -55,6 +55,14 @@ app.config(function($routeProvider, $locationProvider) {
   })
   .otherwise({ redirectTo: '/'});
 
-  $locationProvider.html5mode(true);
+  $locationProvider.html5Mode(true);
 });
 ```
+
+Additionally you will need to have a `<base>` tag in your `index.html`. This can go in the header after the `src` tags.
+
+```
+<base href="/">
+```
+
+If you don't have it, you might get an error like this: [https://docs.angularjs.org/error/$location/nobase](https://docs.angularjs.org/error/$location/nobase)
