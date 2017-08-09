@@ -15,3 +15,5 @@
 
 ## Environment Vars
 - [Env Vars Guide](https://github.com/mhwalsh/lecture-guides/blob/master/env-vars.md)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+- [request](https://www.npmjs.com/package/request)
