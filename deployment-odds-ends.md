@@ -3,7 +3,7 @@
 ## Heroku
 
 - [Video w/ out database](https://vimeo.com/221934686)
-- [Guide w/ pSQL] (https://github.com/mhwalsh/lecture-guides/blob/master/heroku-pSQL-deploy.md)
+- [Guide w/ pSQL](https://github.com/mhwalsh/lecture-guides/blob/master/heroku-pSQL-deploy.md)
 - [Deployment Guide w/ mongoDB and mLabs](https://docs.google.com/document/d/1Fz9O6Zv86eM-NARZwQKgVsX_5WNFYMop3TzI9g7LaWc/edit?usp=sharing)
 
 ### Pricing
