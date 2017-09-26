@@ -159,7 +159,7 @@ Other: $gt, $lt, $in, $elemMatch, $exists:
 > db.users.find( { scores: { $in: [34, 67] } } );
 ```
 
-#####$gt and $lt
+##### $gt and $lt
 
 ```
 > db.users.find({age: {$gt:20}});
