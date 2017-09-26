@@ -1,5 +1,4 @@
-## Intro to Mongo
-## Documentation
+# Intro to Mongo
 [https://docs.mongodb.com/manual/](https://docs.mongodb.com/manual/)
 
 No SQL means, no tables. Show a snippet of mongo document syntax. What does this remind you of?
@@ -16,16 +15,16 @@ No SQL means, no tables. Show a snippet of mongo document syntax. What does this
 * availability - it has a replication model
 * scalability - it can scale horizontally by sharding data across multiple servers
 
-### Terms
-#### Documents
+## Terms
+### Documents
 BSON - binary JSON
 field:value
 
-#### Collections
+### Collections
 A collection is a group of documents that share a purpose. 
 
 -----
-#### Basic CRUD
+### Basic CRUD
 How would we model our users data from first SQL lecture?
 
 ```
@@ -37,12 +36,12 @@ How would we model our users data from first SQL lecture?
 ```
 Note: doesn't show up until you store something into it.
 
-##### Create a collection
+#### Create a collection
 ```
 > db.createCollection("users")
 ```
 
-##### Create
+#### Create
 verb: insert
 
 ```
@@ -63,7 +62,7 @@ Note: not all parts of the document are required. No problem. Flexibility.
 
 Q: Could this be problematic?
 
-##### Read
+#### Read
 verb: find
 
 ```
@@ -94,7 +93,7 @@ Subdocument:
 > db.users.find({name:{first:"millie", last:"walsh"}});
 ```
 
-##### Update
+#### Update
 verb: update
 
 Full object:
@@ -119,7 +118,7 @@ db.users.updateOne(
 Upsert: If it doesn't exist create it.
 
 
-##### Delete
+#### Delete
 verb: remove/deleteMany/deleteOne
 
 ```
@@ -136,7 +135,7 @@ db.users.deleteOne({});
 > db.users.remove({"_id": ObjectId("57e2a9d87938dae4dcea00af")});
 ```
 
-#### More Finds
+### More Finds
 Update user to show more ways BSON can be structured.
 Other: $gt, $lt, $in, $elemMatch, $exists:
 
@@ -144,7 +143,7 @@ Other: $gt, $lt, $in, $elemMatch, $exists:
 > db.users.update({username:"millie11"}, {username: "millie11", active:true, created: new Date(), name: {first: "millie", last: "walsh"}, numberPets: 0, scores: [34, 67, 89], favorites: {food: "tomato", artist: "Picasso" },  family:[{rel: "father", name:"Richard", age: 60}, {rel: "sister", name: "Amy", age: 25}]});
 ```
 
-#####$and $or
+##### $and $or
 
 ```
 > db.users.find( { $and: [{"name.first": "millie"}, {"name.last": "walsh"} ] } );
@@ -154,7 +153,7 @@ Other: $gt, $lt, $in, $elemMatch, $exists:
 > db.users.find({$or: [ {age: 27}, {username: "john7"} ] });
 ```
 
-#####$in
+#### $in
 
 ```
 > db.users.find( { scores: { $in: [34, 67] } } );
@@ -169,12 +168,12 @@ Other: $gt, $lt, $in, $elemMatch, $exists:
 ```
 > db.users.find({age: {$lt:60}});
 ```
-#####$exists
+#### $exists
 ```
 > db.users.find({family :{$exists: true}});
 ```
 
-##### Drop Database
+#### Drop Database
 
 DANGER - Must be in the db you want to drop. Use <dbname>
 
