@@ -14,7 +14,7 @@
 - Run live reloads
 - Speed, of loading your non minified files is expensive. 
 
-## How to Install
+#### How to Install
 [http://gruntjs.com/getting-started]()
 
 [http://gruntjs.com/project-scaffolding]()
